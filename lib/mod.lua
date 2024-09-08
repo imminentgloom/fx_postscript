@@ -14,7 +14,7 @@ local FxPostscript = fx:new{
 }
 
 function FxPostscript:add_params()
-    params:add_separator("fx_postscript", "postscript")
+    params:add_separator("fx_postscript", "paratext: postscript")
 	FxPostscript:add_slot("fx_postscript_slot", "slot")
 	FxPostscript:add_control("fx_postscript_time", "time", "time", controlspec.new(0.001, 2, "exp", 0, 0.55, "s"))
 	FxPostscript:add_control("fx_postscript_feedback", "feedback", "feedback", controlspec.new(0, 100, "lin", 0, 80, "%"))
